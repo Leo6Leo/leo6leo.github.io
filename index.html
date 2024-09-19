@@ -1,5 +1,5 @@
 <!-- <!DOCTYPE html> -->
- With the help of the ChatGPT
+ <!-- With the help of the ChatGPT -->
 <html lang="en">
 
 <head>
@@ -656,7 +656,8 @@ such as login/sign up, view a product, add a product to cart, checkout the order
       image: "/assets/img/project-ml-1.jpg",
       tools: "Python, Flask, React, SQLite",
       demoLink: "https://ece444-project.herokuapp.com/",
-      sourceLink: "https://github.com/yourusername/ece444-project"
+      sourceLink: "https://github.com/yourusername/ece444-project",
+      date: "202404"
     },
     {
       title: "Music Player Web-App",
@@ -664,7 +665,8 @@ such as login/sign up, view a product, add a product to cart, checkout the order
       image: "/assets/img/project-music-player.png",
       tools: "Django, HTML, CSS, Bootstrap, SQLite, AWS S3, Heroku",
       demoLink: "https://galvanic-music.herokuapp.com/",
-      sourceLink: "https://github.com/leo6leo/music-player"
+      sourceLink: "https://github.com/leo6leo/music-player",
+      date: "202403"
     },
   ];
   
@@ -697,6 +699,10 @@ such as login/sign up, view a product, add a product to cart, checkout the order
   }
   
   function loadProjects() {
+
+    projects.sort((a, b) => b.date.localeCompare(a.date));
+
+
   const recentProjectsDiv = document.getElementById('recent-projects');
   const endIndex = Math.min(displayedProjects + projectsPerLoad, projects.length);
   
@@ -711,6 +717,7 @@ such as login/sign up, view a product, add a product to cart, checkout the order
   } else {
     document.getElementById('load-more').style.display = 'inline-block';
   }
+
 }
 
 function createFakeProject() {

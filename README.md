@@ -2,8 +2,13 @@
 **Note:** This repo is a clone of https://github.com/varadbhogayata/varadbhogayata.github.io
 
 
-#Activities
+# Activities
 
 ## Activitiy -1:
 ![Activity-1](./images/ac1.png)
 
+
+## Activitiy -2:
+![Activity-2](./images/ac2-1.png)
+
+![Activity-2](./images/ac2-2.png)

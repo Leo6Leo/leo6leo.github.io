@@ -1,5 +1,4 @@
 <!-- <!DOCTYPE html> -->
- <!-- With the help of the ChatGPT -->
 <html lang="en">
 
 <head>
@@ -699,10 +698,6 @@ such as login/sign up, view a product, add a product to cart, checkout the order
   }
   
   function loadProjects() {
-
-    projects.sort((a, b) => b.date.localeCompare(a.date));
-
-
   const recentProjectsDiv = document.getElementById('recent-projects');
   const endIndex = Math.min(displayedProjects + projectsPerLoad, projects.length);
   
